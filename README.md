@@ -10,8 +10,8 @@ Servidor MCP minimo para Jira Cloud usando `stdio`.
 ## Variables de entorno
 
 ```bash
-export JIRA_BASE_URL="https://tracktec.atlassian.net"
-export JIRA_EMAIL="tu_correo@tracktec.cl"
+export JIRA_BASE_URL="https://tu-dominio.atlassian.net"
+export JIRA_EMAIL="tu_correo@ejemplo.com"
 export JIRA_API_TOKEN="tu_token"
 ```
 
@@ -53,11 +53,11 @@ Ejemplo de configuracion en `~/.codex/config.toml`:
 ```toml
 [mcp_servers.jira]
 command = "node"
-args = ["/home/work/tracktec/jira-mcp/src/index.js"]
+args = ["/ruta/a/jira-mcp/src/index.js"]
 
 [mcp_servers.jira.env]
-JIRA_BASE_URL = "https://tracktec.atlassian.net"
-JIRA_EMAIL = "tu_correo@tracktec.cl"
+JIRA_BASE_URL = "https://tu-dominio.atlassian.net"
+JIRA_EMAIL = "tu_correo@ejemplo.com"
 JIRA_API_TOKEN = "tu_token"
 ```
 
