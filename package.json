@@ -1,0 +1,18 @@
+{
+  "name": "jira-mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Minimal MCP server for Jira Cloud",
+  "type": "module",
+  "bin": {
+    "jira-mcp": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node ./src/index.js",
+    "check": "node --check ./src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "zod": "^3.25.76"
+  }
+}
